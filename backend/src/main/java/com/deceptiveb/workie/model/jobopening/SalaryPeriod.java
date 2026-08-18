@@ -1,4 +1,4 @@
-package com.deceptiveb.workie.model;
+package com.deceptiveb.workie.model.jobopening;
 
 public enum SalaryPeriod {
     HOUR,

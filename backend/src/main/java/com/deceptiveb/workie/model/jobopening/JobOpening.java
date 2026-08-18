@@ -1,4 +1,4 @@
-package com.deceptiveb.workie.model;
+package com.deceptiveb.workie.model.jobopening;
 
 import jakarta.persistence.*;
 
@@ -21,12 +21,14 @@ public class JobOpening {
 
     private String title;
 
+    private String description;
+
     private BigDecimal salaryMin;
     private BigDecimal salaryMax;
     private BigDecimal currency;
     private SalaryPeriod salaryPeriod;
 
-    private String description;
-
     private LocalDateTime closingDate;
+
+    private JobOpeningStatus status;
 }

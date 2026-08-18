@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b75a32ac-513c-495d-bffa-597142bda2ef" name="Changes" comment="" />
+    <list default="true" id="b75a32ac-513c-495d-bffa-597142bda2ef" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/model/AppUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/model/Industry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/model/Resume.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/model/company/Company.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/model/company/CompanyUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/model/jobopening/JobOpeningStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/model/JobOpening.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/model/jobopening/JobOpening.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/model/SalaryPeriod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/model/jobopening/SalaryPeriod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/model/audit/DateAudit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/model/audit/DateAudit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/model/audit/UserDateAudit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/model/audit/UserDateAudit.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +30,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -25,10 +40,10 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3,
-  "fromUser": false
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3I1Tki7cU1GycMUTJlTOf31mV3B" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
@@ -37,8 +52,10 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/deceptiveb/IdeaProjects/ticket"
+    "last_opened_file_path": "/home/deceptiveb/IdeaProjects/workie/backend"
   }
 }]]></component>
   <component name="TaskManager">
