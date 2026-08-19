@@ -5,17 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b75a32ac-513c-495d-bffa-597142bda2ef" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/model/AppUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/model/Industry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/model/Resume.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/model/company/Company.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/model/company/CompanyUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/model/jobopening/JobOpeningStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/repository/AppUserRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/service/JWTService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/model/JobOpening.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/model/jobopening/JobOpening.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/model/SalaryPeriod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/model/jobopening/SalaryPeriod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/model/audit/DateAudit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/model/audit/DateAudit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/model/audit/UserDateAudit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/model/audit/UserDateAudit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/model/AppUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/model/AppUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/model/Resume.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/model/Resume.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -50,6 +48,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.com.deceptiveb.workie.repository in workie.executor": "Debug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -58,6 +57,27 @@
     "last_opened_file_path": "/home/deceptiveb/IdeaProjects/workie/backend"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="com.deceptiveb.workie.repository in workie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="workie" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.deceptiveb.workie.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.deceptiveb.workie.repository" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.com.deceptiveb.workie.repository in workie" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="b75a32ac-513c-495d-bffa-597142bda2ef" name="Changes" comment="" />
