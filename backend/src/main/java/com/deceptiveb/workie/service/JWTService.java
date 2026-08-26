@@ -1,11 +1,10 @@
 package com.deceptiveb.workie.service;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
-@Service
-public class JWTService {
-    private String secretKey;
-
-
-    private long jwtExpiration;
+public interface JWTService {
+    boolean validateJwtToken(String token);
+    String generateToken(String username);
+    String getUserFromToken(String token);
 }

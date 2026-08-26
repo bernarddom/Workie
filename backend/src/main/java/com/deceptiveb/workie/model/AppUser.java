@@ -3,6 +3,7 @@ package com.deceptiveb.workie.model;
 import com.deceptiveb.workie.model.audit.DateAudit;
 import jakarta.persistence.*;
 import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
@@ -29,8 +30,14 @@ public class AppUser extends DateAudit implements UserDetails {
 
     private String password;
 
+    private String username;
+
     @OneToMany(mappedBy = "app_user")
     private Set<Resume> resumes;
+
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    private Role role;
 
     public AppUser() {
     }
@@ -72,18 +79,34 @@ public class AppUser extends DateAudit implements UserDetails {
         this.fullName = fullName;
     }
 
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return List.of();
+        return List.of(
+                new SimpleGrantedAuthority(
+                        "ROLE_" + this.getRole().name()
+                )
+        );
     }
 
     public String getPassword() {
         return password;
     }
 
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
     @Override
     public String getUsername() {
-        return "";
+        return this.username;
     }
 
     @Override

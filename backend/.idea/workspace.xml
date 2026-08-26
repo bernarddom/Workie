@@ -5,13 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b75a32ac-513c-495d-bffa-597142bda2ef" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/config/JwtAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/config/EncoderConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/securirty/AuthEntryPointJwt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/securirty/JwtAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/securirty/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/service/AppUserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/service/impl/JWTServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/config/JwtAuthenticationFilter.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/model/AppUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/model/AppUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/service/JWTService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/service/JWTService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-dev.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-dev.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/deceptiveb/workie/WorkieApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/deceptiveb/workie/config/SecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/deceptiveb/workie/model/AppUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/deceptiveb/workie/model/Industry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/deceptiveb/workie/model/Resume.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/deceptiveb/workie/model/audit/DateAudit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/deceptiveb/workie/model/audit/UserDateAudit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/deceptiveb/workie/model/company/Company.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/deceptiveb/workie/model/company/CompanyUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/deceptiveb/workie/model/jobopening/JobOpening.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/deceptiveb/workie/model/jobopening/JobOpeningStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/deceptiveb/workie/model/jobopening/SalaryPeriod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/deceptiveb/workie/service/JWTService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/deceptiveb/workie/WorkieApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +44,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -45,18 +68,20 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.com.deceptiveb.workie.repository in workie.executor&quot;: &quot;Debug&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/deceptiveb/IdeaProjects/workie/backend&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.com.deceptiveb.workie.repository in workie.executor": "Debug",
+    "JUnit.com.deceptiveb.workie.securirty in workie.executor": "Coverage",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/deceptiveb/IdeaProjects/workie/backend",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RunManager" selected="JUnit.com.deceptiveb.workie.securirty in workie">
     <configuration name="com.deceptiveb.workie.repository in workie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="workie" />
       <extension name="coverage">
@@ -71,8 +96,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.deceptiveb.workie.securirty in workie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="workie" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.deceptiveb.workie.securirty.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.deceptiveb.workie.securirty" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.com.deceptiveb.workie.securirty in workie" />
         <item itemvalue="JUnit.com.deceptiveb.workie.repository in workie" />
       </list>
     </recent_temporary>
