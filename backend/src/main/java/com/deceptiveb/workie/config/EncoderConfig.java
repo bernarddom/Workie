@@ -8,8 +8,4 @@ public class EncoderConfig {
     @Value("${security.jwt.secret-key}")
     private String jwtKey;
 
-    @Bean
-    JWTEncoder jwtEncoder() {
-
-    }
 }

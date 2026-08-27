@@ -12,28 +12,7 @@ import org.springframework.stereotype.Service;
 import java.util.Collections;
 
 @Service
-public class UserService implements UserDetailsService {
+public class UserService {
 
-    private final AppUserRepo appUserRepo;
 
-    @Autowired
-    public UserService(AppUserRepo appUserRepo) {
-        this.appUserRepo = appUserRepo;
-    }
-
-    private AppUser getUserFromUsername(String username) {
-        return appUserRepo
-                .findByUsernameAndIsActive(username, true)
-                .orElseThrow(() -> new UsernameNotFoundException("User not found"));
-    }
-
-    @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        AppUser appUser = getUserFromUsername(username);
-        return User.builder()
-                .username(appUser.getUsername())
-                .password(appUser.getPassword())
-                .authorities(Collections.emptyList())
-                .build();
-    }
 }

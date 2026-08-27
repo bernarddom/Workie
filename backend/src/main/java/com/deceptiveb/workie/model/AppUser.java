@@ -12,7 +12,7 @@ import java.util.Set;
 
 @Entity
 @Table
-public class AppUser extends DateAudit implements UserDetails {
+public class AppUser extends DateAudit {
     @Id
     @SequenceGenerator(
             name = "user_id_sequence",
@@ -32,7 +32,9 @@ public class AppUser extends DateAudit implements UserDetails {
 
     private String username;
 
-    @OneToMany(mappedBy = "app_user")
+    private boolean isActive;
+
+    @OneToMany(mappedBy = "appUser")
     private Set<Resume> resumes;
 
     @Enumerated(EnumType.STRING)
@@ -53,6 +55,22 @@ public class AppUser extends DateAudit implements UserDetails {
         this.fullName = fullName;
         this.password = password;
         this.resumes = resumes;
+    }
+
+    public boolean isActive() {
+        return isActive;
+    }
+
+    public void setActive(boolean active) {
+        isActive = active;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public Integer getId() {
@@ -87,46 +105,8 @@ public class AppUser extends DateAudit implements UserDetails {
         this.role = role;
     }
 
-    @Override
-    public Collection<? extends GrantedAuthority> getAuthorities() {
-        return List.of(
-                new SimpleGrantedAuthority(
-                        "ROLE_" + this.getRole().name()
-                )
-        );
-    }
-
     public String getPassword() {
         return password;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    @Override
-    public String getUsername() {
-        return this.username;
-    }
-
-    @Override
-    public boolean isAccountNonExpired() {
-        return UserDetails.super.isAccountNonExpired();
-    }
-
-    @Override
-    public boolean isAccountNonLocked() {
-        return UserDetails.super.isAccountNonLocked();
-    }
-
-    @Override
-    public boolean isCredentialsNonExpired() {
-        return UserDetails.super.isCredentialsNonExpired();
-    }
-
-    @Override
-    public boolean isEnabled() {
-        return UserDetails.super.isEnabled();
     }
 
     public void setPassword(String password) {

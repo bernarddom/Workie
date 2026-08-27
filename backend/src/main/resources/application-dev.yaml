@@ -4,7 +4,7 @@ PRIVATE_KEY: 'private.key'
 PUBLIC_KEY: 'public.key'
 
 POSTGRES_USERNAME: 'deceptiveb'
-POSTGRES_DATABASE: 'ticket_system'
+POSTGRES_DATABASE: 'workie'
 POSTGRES_HOST: 'localhost'
 POSTGRES_PORT: 5432
 POSTGRES_PASSWORD: 'deceptiveb'
