@@ -44,9 +44,10 @@ public class AppUser extends DateAudit {
     public AppUser() {
     }
 
-    public AppUser(String email, String fullName, String password) {
+    public AppUser(String email, String fullName,String username, String password) {
         this.email = email;
         this.fullName = fullName;
+        this.username = username;
         this.password = password;
     }
 
