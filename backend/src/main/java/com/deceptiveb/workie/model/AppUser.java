@@ -44,11 +44,12 @@ public class AppUser extends DateAudit {
     public AppUser() {
     }
 
-    public AppUser(String email, String fullName,String username, String password) {
+    public AppUser(String email, String fullName,String username, String password, Role role) {
         this.email = email;
         this.fullName = fullName;
         this.username = username;
         this.password = password;
+        this.role = role;
     }
 
     public AppUser(String email, String fullName, String password, Set<Resume> resumes) {

@@ -1,8 +1,10 @@
 package com.deceptiveb.workie.controller;
 
+import com.deceptiveb.workie.dto.auth.RegisterUserDto;
 import com.deceptiveb.workie.model.AppUser;
 import com.deceptiveb.workie.repository.AppUserRepo;
 import com.deceptiveb.workie.service.JWTService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -17,10 +19,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {
-    private AuthenticationManager authenticationManager;
-    private AppUserRepo userRepo;
-    private PasswordEncoder passwordEncoder;
-    private JWTService jwtService;
+    private final AuthenticationManager authenticationManager;
+    private final AppUserRepo userRepo;
+    private final PasswordEncoder passwordEncoder;
+    private final JWTService jwtService;
 
     @Autowired
     public AuthController(AuthenticationManager authenticationManager, AppUserRepo userRepo, PasswordEncoder passwordEncoder, JWTService jwtService) {
@@ -31,11 +33,11 @@ public class AuthController {
     }
 
     @PostMapping("/signin")
-    public String authenticateUser(@RequestBody AppUser appUser) {
+    public String authenticateUser(@RequestBody RegisterUserDto user) {
         Authentication authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(
-                        appUser.getUsername(),
-                        appUser.getPassword()
+                        user.username(),
+                        user.password()
                 )
         );
 
@@ -46,15 +48,17 @@ public class AuthController {
         return null;
     }
 
-    public String registerUser(@RequestBody AppUser appUser) {
-        if (userRepo.existsByUsername(appUser.getUsername())) {
+    @PostMapping("/register")
+    public String registerUser(@RequestBody @Valid RegisterUserDto appUser) {
+        if (userRepo.existsByUsername(appUser.username())) {
             return "User already exists!";
         }
         final AppUser newUser = new AppUser(
-                appUser.getEmail(),
-                appUser.getFullName(),
-                appUser.getUsername(),
-                passwordEncoder.encode(appUser.getPassword())
+                appUser.email(),
+                appUser.fullName(),
+                appUser.username(),
+                passwordEncoder.encode(appUser.password()),
+                appUser.role()
         );
 
         userRepo.save(newUser);
