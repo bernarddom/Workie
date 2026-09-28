@@ -1,5 +1,6 @@
 package com.deceptiveb.workie.controller;
 
+import com.deceptiveb.workie.dto.auth.AuthenticateUserDto;
 import com.deceptiveb.workie.dto.auth.RegisterUserDto;
 import com.deceptiveb.workie.model.AppUser;
 import com.deceptiveb.workie.repository.AppUserRepo;
@@ -33,7 +34,7 @@ public class AuthController {
     }
 
     @PostMapping("/signin")
-    public String authenticateUser(@RequestBody RegisterUserDto user) {
+    public String authenticateUser(@RequestBody @Valid AuthenticateUserDto user) {
         Authentication authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(
                         user.username(),

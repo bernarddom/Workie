@@ -50,6 +50,7 @@ public class AppUser extends DateAudit {
         this.username = username;
         this.password = password;
         this.role = role;
+        this.isActive = true;
     }
 
     public AppUser(String email, String fullName, String password, Set<Resume> resumes) {
