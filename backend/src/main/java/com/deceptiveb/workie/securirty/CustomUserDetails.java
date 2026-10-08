@@ -8,13 +8,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.Collection;
 import java.util.List;
 
-public class CustomUserDetails implements UserDetails {
-
-    private final AppUser user;
-
-    public CustomUserDetails(AppUser user) {
-        this.user = user;
-    }
+public record CustomUserDetails(AppUser user) implements UserDetails {
 
     @Override
     public String getUsername() {
@@ -53,9 +47,5 @@ public class CustomUserDetails implements UserDetails {
     @Override
     public boolean isEnabled() {
         return UserDetails.super.isEnabled();
-    }
-
-    public AppUser getUser(){
-        return user;
     }
 }

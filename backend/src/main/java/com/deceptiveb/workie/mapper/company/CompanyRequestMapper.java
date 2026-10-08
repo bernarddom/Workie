@@ -1,15 +1,17 @@
 package com.deceptiveb.workie.mapper.company;
 
-import com.deceptiveb.workie.dto.company.CompanyRequestDTO;
+import com.deceptiveb.workie.dto.company.CompanyRequestDto;
 import com.deceptiveb.workie.exception.ResourceNotFoundException;
 import com.deceptiveb.workie.model.Industry;
 import com.deceptiveb.workie.model.company.Company;
 import com.deceptiveb.workie.repository.IndustryRepo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.function.Function;
 
-public class CompanyRequestMapper implements Function<CompanyRequestDTO, Company> {
+@Service
+public class CompanyRequestMapper implements Function<CompanyRequestDto, Company> {
     private final IndustryRepo industryRepo;
 
     @Autowired
@@ -18,7 +20,7 @@ public class CompanyRequestMapper implements Function<CompanyRequestDTO, Company
     }
 
     @Override
-    public Company apply(CompanyRequestDTO companyRequestDTO) {
+    public Company apply(CompanyRequestDto companyRequestDTO) {
         Industry industry = industryRepo
                 .findById(companyRequestDTO.industryId())
                 .orElseThrow(() -> new ResourceNotFoundException("Industry", "id", companyRequestDTO.industryId()));

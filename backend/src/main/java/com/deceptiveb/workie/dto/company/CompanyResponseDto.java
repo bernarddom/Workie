@@ -1,11 +1,9 @@
 package com.deceptiveb.workie.dto.company;
 
-import java.util.Date;
-
-public record CompanyRequestDTO(
+public record CompanyResponseDto(
+        Integer id,
         String name,
-        Date foundedAt,
-        Integer industryId,
+        String industry,
         String email,
         String phone,
         String location

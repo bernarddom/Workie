@@ -5,11 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b75a32ac-513c-495d-bffa-597142bda2ef" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/repository/CompanyRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/service/CompanyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/service/impl/CompanyServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/dto/company/CompanyResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/mapper/company/CompanyResponseMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/controller/CompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/controller/CompanyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/dto/company/CompanyRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/dto/company/CompanyRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/mapper/company/CompanyRequestMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/mapper/company/CompanyRequestMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/securirty/CustomUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/securirty/CustomUserDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/securirty/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/securirty/CustomUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/service/CompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/service/CompanyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/service/impl/CompanyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/service/impl/CompanyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/deceptiveb/workie/config/SecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/deceptiveb/workie/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/deceptiveb/workie/controller/TestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/deceptiveb/workie/securirty/CustomUserDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/deceptiveb/workie/securirty/CustomUserDetailsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/deceptiveb/workie/securirty/JwtAuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/deceptiveb/workie/securirty/JwtAuthenticationFilter.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +31,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Record" />
         <option value="Class" />
-        <option value="Interface" />
       </list>
     </option>
   </component>

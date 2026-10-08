@@ -1,6 +1,7 @@
 package com.deceptiveb.workie.controller;
 
-import com.deceptiveb.workie.dto.company.CompanyRequestDTO;
+import com.deceptiveb.workie.dto.company.CompanyRequestDto;
+import com.deceptiveb.workie.dto.company.CompanyResponseDto;
 import com.deceptiveb.workie.model.company.Company;
 import com.deceptiveb.workie.securirty.CustomUserDetails;
 import com.deceptiveb.workie.service.CompanyService;
@@ -21,16 +22,15 @@ public class CompanyController {
     }
 
     @PostMapping
-    public ResponseEntity<Void> createCompany(
+    public ResponseEntity<CompanyResponseDto> createCompany(
             @AuthenticationPrincipal CustomUserDetails userDetails,
-            @RequestBody @Valid CompanyRequestDTO companyRequest) {
-        Company company = companyService.save(companyRequest);
+            @RequestBody @Valid CompanyRequestDto companyRequest) {
+        CompanyResponseDto company = companyService.save(companyRequest);
         URI location = ServletUriComponentsBuilder
                 .fromCurrentRequest()
                 .path("/{id}")
-                .buildAndExpand(company.getId())
+                .buildAndExpand(company.id())
                 .toUri();
-        // TODO return CompanyDTO
-        return ResponseEntity.created(location).build();
+        return ResponseEntity.created(location).body(company);
     }
 }
