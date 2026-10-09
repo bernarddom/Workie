@@ -13,7 +13,7 @@ import java.util.Map;
 @ControllerAdvice
 public class RestControllerExceptionHandler {
 
-    @ExceptionHandler
+    @ExceptionHandler(ResourceNotFoundException.class)
     public ResponseEntity<ApiResponse> resolveException(
             ResourceNotFoundException exception
     ) {
