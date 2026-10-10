@@ -22,6 +22,10 @@ public class Industry {
     public Industry() {
     }
 
+    public Industry(String name) {
+        this.name = name;
+    }
+
     public Industry(Integer id, String name) {
         this.id = id;
         this.name = name;

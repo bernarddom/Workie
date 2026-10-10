@@ -5,5 +5,5 @@ import com.deceptiveb.workie.dto.industry.IndustryResponseDto;
 import com.deceptiveb.workie.model.Industry;
 
 public interface IndustryService {
-    IndustryResponseDto create(IndustryRequestDto industryRequest);
+    IndustryResponseDto save(IndustryRequestDto industryRequest);
 }

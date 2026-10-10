@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b75a32ac-513c-495d-bffa-597142bda2ef" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/dto/industry/IndustryRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/dto/industry/IndustryResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/service/IndustryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/controller/IndustryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/mapper/industry/IndustryRequestMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/mapper/industry/IndustryResponseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/service/impl/IndustryServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/exception/RestControllerExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/exception/RestControllerExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/securirty/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/securirty/CustomUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/model/Industry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/model/Industry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/service/IndustryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deceptiveb/workie/service/IndustryService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +23,8 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Record" />
+        <option value="Class" />
       </list>
     </option>
   </component>
