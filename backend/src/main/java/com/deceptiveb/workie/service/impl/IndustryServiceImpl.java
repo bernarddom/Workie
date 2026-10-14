@@ -8,6 +8,10 @@ import com.deceptiveb.workie.mapper.industry.IndustryResponseMapper;
 import com.deceptiveb.workie.model.Industry;
 import com.deceptiveb.workie.repository.IndustryRepo;
 import com.deceptiveb.workie.service.IndustryService;
+import com.deceptiveb.workie.specification.IndustrySpecification;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.domain.Specification;
 
 import java.util.List;
 
@@ -42,6 +46,8 @@ public class IndustryServiceImpl implements IndustryService {
 
     @Override
     public List<IndustryResponseDto> getIndustries(String filter, int page, int size) {
+        Pageable pageable = PageRequest.of(page, size);
+        Specification<Industry> spec = IndustrySpecification.filterByName(filter);
         return List.of();
     }
 }

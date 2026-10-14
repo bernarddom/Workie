@@ -53,8 +53,13 @@ public class IndustryController {
                     value = "size",
                     required = false,
                     defaultValue = AppConstants.DEFAULT_PAGE_NUMBER
-            ) Integer size
+            ) Integer size,
+            @RequestParam(
+                    value = "filter",
+                    required = false,
+                    defaultValue = ""
+            ) String filter
     ){
-        return null;
+        return ResponseEntity.ok().body(industryService.getIndustries(filter,size,size));
     }
 }
